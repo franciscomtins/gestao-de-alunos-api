@@ -111,6 +111,21 @@ Na primeira execução com o banco vazio, a API popula automaticamente as coleç
 dados fake descrito em [Dados fake pré-carregados](#dados-fake-pré-carregados). Em execuções
 seguintes, os dados já existentes são preservados.
 
+## Testes automatizados
+
+Os testes de API usam **Mocha**, **Chai** e **SuperTest**, e as variáveis de ambiente são lidas
+com **Dotenv**.
+
+```bash
+cp .env.example .env   # ajuste MONGODB_URI e as credenciais do admin, se necessário
+npm test
+```
+
+- `test/helpers/auth.js` — helpers `loginAdmin()` e `loginAluno()`.
+- `test/data/*.json` — massa de dados dos testes (Data-Driven Testing).
+- `test/*.test.js` — suítes de teste (login e fluxo de entrega de trabalho).
+- Pipeline: `.github/workflows/tests.yml` (sobe um MongoDB como serviço e executa `npm test`).
+
 ## Documentação da API (Swagger)
 
 A documentação completa de todas as rotas, parâmetros, corpos de requisição e respostas está

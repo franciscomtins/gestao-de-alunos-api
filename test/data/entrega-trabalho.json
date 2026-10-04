@@ -1,0 +1,44 @@
+[
+  {
+    "cenario": "aluno com trabalho em Matemática",
+    "aluno": {
+      "nome": "Diego Ferreira",
+      "email": "diego.ferreira@example.com",
+      "matricula": "2025001",
+      "senha": "senha123"
+    },
+    "disciplinaId": "disciplina-matematica",
+    "trabalho": {
+      "titulo": "Lista de Exercícios 3",
+      "descricao": "Resolução dos exercícios do capítulo 4."
+    }
+  },
+  {
+    "cenario": "aluno com trabalho em História",
+    "aluno": {
+      "nome": "Elisa Rocha",
+      "email": "elisa.rocha@example.com",
+      "matricula": "2025002",
+      "senha": "outraSenha456"
+    },
+    "disciplinaId": "disciplina-historia",
+    "trabalho": {
+      "titulo": "Resenha sobre a Revolução Francesa",
+      "descricao": "Resenha crítica de duas páginas."
+    }
+  },
+  {
+    "cenario": "aluno com trabalho em Programação Web",
+    "aluno": {
+      "nome": "Felipe Andrade",
+      "email": "felipe.andrade@example.com",
+      "matricula": "2025003",
+      "senha": "web@2025"
+    },
+    "disciplinaId": "disciplina-programacao-web",
+    "trabalho": {
+      "titulo": "Portfólio Pessoal",
+      "descricao": "Site de portfólio com HTML, CSS e JavaScript."
+    }
+  }
+]

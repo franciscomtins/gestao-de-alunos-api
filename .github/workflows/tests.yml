@@ -38,3 +38,6 @@ jobs:
         run: npm test
         env:
           MONGODB_URI: mongodb://127.0.0.1:27017/gestao-de-alunos-test
+          JWT_SECRET: segredo-ci-gestao-de-alunos
+          ADMIN_EMAIL: admin@escola.com
+          ADMIN_SENHA: admin123
